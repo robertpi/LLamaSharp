@@ -14,4 +14,10 @@
     <ProjectReference Include="..\LLama\LLamaSharp.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\LLama.Examples\Assets\**\*.*" Link="Assets\%(RecursiveDir)%(Filename)%(Extension)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
